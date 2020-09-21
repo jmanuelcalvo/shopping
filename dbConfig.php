@@ -1,9 +1,9 @@
 <?php
 // Database configuration
-$dbHost     = "localhost";
-$dbUsername = "root";
-$dbPassword = "password";
-$dbName     = "codexworld";
+$dbHost     = "mysql1.carrito.svc.cluster.local";
+$dbUsername = "spuser";
+$dbPassword = "mypa55";
+$dbName     = "shopping";
 
 // Create database connection
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
