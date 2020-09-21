@@ -34,8 +34,8 @@ require_once 'dbConfig.php';
 	
   <form action="orderSuccess.php" method="GET">
   <div class="form-group">
-    <label for="orderNumber">Order Number</label>
-    <input type="email" class="form-control" id="orderNumber" placeholder="999">
+    <label for="id">Order Number</label>
+    <input type="text" class="form-control" id="id" name="id" placeholder="999">
     <button type="submit" class="btn btn-primary">Submit</button>
   </div>
 </form>  
