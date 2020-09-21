@@ -26,6 +26,7 @@ require_once 'dbConfig.php';
   <a href="index.php" class="logo"><img src="img/logo1.png" width="200" height="100"/></a>
   <div class="header-right">
     <a href="orderSuccess.php?id=4">Ordenes</a>
+    <a href="orderDetail.php">Detalle de la order</a>
     <a href="checkout.php">Carrito</a>
   </div>
 </div>
