@@ -25,13 +25,12 @@ require_once 'dbConfig.php';
 <div class="header">
   <a href="index.php" class="logo"><img src="img/logo1.png" width="200" height="100"/></a>
   <div class="header-right">
-    <a href="orderSuccess.php?id=4">Ordenes</a>
     <a href="orderDetail.php">Detalle de la order</a>
     <a href="checkout.php">Carrito</a>
   </div>
 </div>
 <div class="container">
-    <h1>PRODUCTS</h1>
+    <h1>PRODUCTOS</h1>
 	
 	<!-- Cart basket -->
 	<div class="cart-view">
@@ -51,7 +50,7 @@ require_once 'dbConfig.php';
 			  <h5 class="card-title"><?php echo $row["name"]; ?></h5>
 			  <h6 class="card-subtitle mb-2 text-muted">Price: <?php echo '$'.$row["price"].' USD'; ?></h6>
 			  <p class="card-text"><?php echo $row["description"]; ?></p>
-			  <a href="cartAction.php?action=addToCart&id=<?php echo $row["id"]; ?>" class="btn btn-primary">Add to Cart</a>
+			  <a href="cartAction.php?action=addToCart&id=<?php echo $row["id"]; ?>" class="btn btn-primary">Añadir al carrito</a>
 			</div>
 		</div>
         <?php } }else{ ?>

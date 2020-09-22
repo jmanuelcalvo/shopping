@@ -29,7 +29,7 @@ if(!empty($sessData['status']['msg'])){
 <div class="header">
   <a href="index.php" class="logo"><img src="img/logo1.png" width="200" height="100"/></a>
   <div class="header-right">
-    <a href="orderSuccess.php?id=4">Ordenes</a>
+    <a href="orderDetail.php">Detalle de la order</a>
     <a href="checkout.php">Carrito</a>
   </div>
 </div>
@@ -61,7 +61,7 @@ if(!empty($sessData['status']['msg'])){
 				
 				<div class="col-md-4 order-md-2 mb-4">
 					<h4 class="d-flex justify-content-between align-items-center mb-3">
-						<span class="text-muted">Your Cart</span>
+						<span class="text-muted">Su carrito</span>
 						<span class="badge badge-secondary badge-pill"><?php echo $cart->total_items(); ?></span>
 					</h4>
 					<ul class="list-group mb-3">
@@ -84,31 +84,31 @@ if(!empty($sessData['status']['msg'])){
 						  <strong><?php echo '$'.$cart->total(); ?></strong>
 						</li>
 					</ul>
-					<a href="index.php" class="btn btn-block btn-info">Add Items</a>
+					<a href="index.php" class="btn btn-block btn-info">Agregar elementos</a>
 				</div>
 				<div class="col-md-8 order-md-1">
-					<h4 class="mb-3">Contact Details</h4>
+					<h4 class="mb-3">Detalles de contacto</h4>
 					<form method="post" action="cartAction.php">
 						<div class="row">
 							<div class="col-md-6 mb-3">
-							  <label for="first_name">First Name</label>
+							  <label for="first_name">Nombre</label>
 							  <input type="text" class="form-control" name="first_name" value="<?php echo !empty($postData['first_name'])?$postData['first_name']:''; ?>" required>
 							</div>
 							<div class="col-md-6 mb-3">
-							  <label for="last_name">Last Name</label>
+							  <label for="last_name">Apellido</label>
 							  <input type="text" class="form-control" name="last_name" value="<?php echo !empty($postData['last_name'])?$postData['last_name']:''; ?>" required>
 							</div>
 						</div>
 						<div class="mb-3">
-							<label for="email">Email</label>
+							<label for="email">Correo electronico</label>
 							<input type="email" class="form-control" name="email" value="<?php echo !empty($postData['email'])?$postData['email']:''; ?>" required>
 						</div>
 						<div class="mb-3">
-							<label for="phone">Phone</label>
+							<label for="phone">Teléfono</label>
 							<input type="text" class="form-control" name="phone" value="<?php echo !empty($postData['phone'])?$postData['phone']:''; ?>" required>
 						</div>
 						<div class="mb-3">
-							<label for="last_name">Address</label>
+							<label for="last_name">Dirección</label>
 							<input type="text" class="form-control" name="address" value="<?php echo !empty($postData['address'])?$postData['address']:''; ?>" required>
 						</div>
 						<input type="hidden" name="action" value="placeOrder"/>

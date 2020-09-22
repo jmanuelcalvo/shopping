@@ -37,6 +37,7 @@ function updateCartItem(obj,id){
   <a href="index.php" class="logo"><img src="img/logo1.png" width="200" height="100"/></a>
   <div class="header-right">
     <a href="orderSuccess.php?id=4">Ordenes</a>
+    <a href="orderDetail.php">Detalle de la order</a>
     <a href="checkout.php">Carrito</a>
   </div>
 </div>
@@ -45,7 +46,7 @@ function updateCartItem(obj,id){
 
 </div>
 <div class="container">
-    <h1>SHOPPING CART</h1>
+    <h1>CARRITO DE COMPRAS</h1>
 	<div class="row">
 		<div class="cart">
 			<div class="col-12">
@@ -53,9 +54,9 @@ function updateCartItem(obj,id){
 					<table class="table table-striped">
 						<thead>
 							<tr>
-								<th width="45%">Product</th>
-								<th width="10%">Price</th>
-								<th width="15%">Quantity</th>
+								<th width="45%">Producto</th>
+								<th width="10%">Precio</th>
+								<th width="15%">Cantidad</th>
 								<th class="text-right" width="20%">Total</th>
 								<th width="10%"> </th>
 							</tr>
@@ -81,7 +82,7 @@ function updateCartItem(obj,id){
 							<tr>
 								<td></td>
 								<td></td>
-								<td><strong>Cart Total</strong></td>
+								<td><strong>Total del carrito</strong></td>
 								<td class="text-right"><strong><?php echo '$'.$cart->total().' USD'; ?></strong></td>
 								<td></td>
 							</tr>
@@ -93,7 +94,7 @@ function updateCartItem(obj,id){
 			<div class="col mb-2">
 				<div class="row">
 					<div class="col-sm-12  col-md-6">
-						<a href="index.php" class="btn btn-block btn-light">Continue Shopping</a>
+						<a href="index.php" class="btn btn-block btn-light">Seguir Comprando</a>
 					</div>
 					<div class="col-sm-12 col-md-6 text-right">
 						<?php if($cart->total_items() > 0){ ?>
