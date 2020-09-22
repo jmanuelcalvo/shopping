@@ -13,11 +13,12 @@ require_once 'dbConfig.php';
 <title>PHP Shopping Cart</title>
 <meta charset="utf-8">
 
+	
+<!-- Custom style -->
+<link href="css/style.css" rel="stylesheet">
 <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Custom style -->
-<link href="css/style.css" rel="stylesheet">
 
 </head>
 </head>
