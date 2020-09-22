@@ -30,13 +30,13 @@ require_once 'dbConfig.php';
   </div>
 </div>
 <div class="container">
-    <h1>ORDER</h1>
+    <h1>ORDENES</h1>
 	
   <form action="orderSuccess.php" method="GET">
   <div class="form-group">
-    <label for="id">Order Number</label>
+    <label for="id">Número de orden</label>
     <input type="text" class="form-control" id="id" name="id" placeholder="999">
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Enviar</button>
   </div>
 </form>  
 </div>

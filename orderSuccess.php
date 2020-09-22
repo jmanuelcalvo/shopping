@@ -32,27 +32,27 @@ if($result->num_rows > 0){
 <div class="header">
   <a href="index.php" class="logo"><img src="img/logo1.png" width="200" height="100"/></a>
   <div class="header-right">
-    <a href="viewCart.php">Ordenes</a>
+    <a href="orderDetail.php">Detalle de la order</a>
     <a href="checkout.php">Carrito</a>
   </div>
 </div>
 <div class="container">
-    <h1>ORDER STATUS</h1>
+    <h1>ESTADO DEL PEDIDO</h1>
 	<div class="col-12">
 		<?php if(!empty($orderInfo)){ ?>
 			<div class="col-md-12">
-				<div class="alert alert-success">Your order has been placed successfully.</div>
+				<div class="alert alert-success">Su pedido se ha realizado correctamente.</div>
 			</div>
 			
 			<!-- Order status & shipping info -->
 			<div class="row col-lg-12 ord-addr-info">
-				<div class="hdr">Order Info</div>
-				<p><b>Reference ID:</b> #<?php echo $orderInfo['id']; ?></p>
+				<div class="hdr">Información de pedido</div>
+				<p><b>ID de referencia:</b> #<?php echo $orderInfo['id']; ?></p>
 				<p><b>Total:</b> <?php echo '$'.$orderInfo['grand_total'].' USD'; ?></p>
-				<p><b>Placed On:</b> <?php echo $orderInfo['created']; ?></p>
-				<p><b>Buyer Name:</b> <?php echo $orderInfo['first_name'].' '.$orderInfo['last_name']; ?></p>
-				<p><b>Email:</b> <?php echo $orderInfo['email']; ?></p>
-				<p><b>Phone:</b> <?php echo $orderInfo['phone']; ?></p>
+				<p><b>Colocado en:</b> <?php echo $orderInfo['created']; ?></p>
+				<p><b>Nombre del comprador:</b> <?php echo $orderInfo['first_name'].' '.$orderInfo['last_name']; ?></p>
+				<p><b>Correo electrónico:</b> <?php echo $orderInfo['email']; ?></p>
+				<p><b>Teléfono:</b> <?php echo $orderInfo['phone']; ?></p>
 			</div>
 			
 			<!-- Order items -->
@@ -60,8 +60,8 @@ if($result->num_rows > 0){
 				<table class="table table-hover">
 					<thead>
 					  <tr>
-						<th>Product</th>
-						<th>Price</th>
+						<th>Producto</th>
+						<th>Precio</th>
 						<th>QTY</th>
 						<th>Sub Total</th>
 					  </tr>
