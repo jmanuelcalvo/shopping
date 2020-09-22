@@ -16,10 +16,17 @@ app.get('/', function(req, res) {
 });
 
 
-app.get("/api", (req, res, next) => {
- res.json(["Tony","Lisa","Michael","Ginger","Food"]);
+app.get("/users", (req, res, next) => {
+ res.json(["Jose Manuel Calvo","Katerin Bernal","Douglas Correa"]);
 });
 
+
+app.get('/api', function (req, res) {
+   fs.readFile( __dirname + "/" + "order.json", 'utf8', function (err, data) {
+      console.log( data );
+      res.end( data );
+   });
+})
 
 
 
