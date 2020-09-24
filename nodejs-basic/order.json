@@ -1,21 +1,21 @@
 {
    "orden1" : {
       "comprador" : "Jose Manuel Calvo",
-      "total" : "2232.00",
+      "total" : "1040.00",
       "correo" : "jcalvo@redhat.com",
       "id": 1
    },
    
    "orden2" : {
       "comprador" : "Katerin Bernal",
-      "total" : "680.00",
+      "total" : "491.00",
       "correo" : "katty@redhat.com",
       "id": 2
    },
    
    "orden3" : {
       "comprador" : "Douglas Correa",
-      "total" : "500.00",
+      "total" : "350.00",
       "correo" : "douglas@redhat.com",
       "id": 3
    }
